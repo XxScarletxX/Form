@@ -1,0 +1,106 @@
+﻿<!DOCTYPE>
+<html>
+
+<head>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+<style>
+table, th, td {
+	border : 1px solid black;
+	border-collapse: collapse;
+	padding : 20px;
+}
+
+</style>
+</head>
+
+<body>
+<p><h2 style = "text-align:center";>Demande d'admission</h2></p>
+<p>Je demande à être admis comme <b>membre</b> de la Coop Bécik.</p>
+<p>Je m'engage à respecter les règles de la coopérative.</p>
+<p>Je m'engage à verser à la coopérative un montant de 10$ applicable au paiement de mes parts de qualification, conformément au règlement de régie interne adopté parla coopérative.</p>
+<p>S'il y a lieu, je m'engage à finaliser le paiement de mes parts de qualification selon les modalités déterminées par le règlement de régie interne de la coopérative.</p>
+<div>
+<table width = "75%"; align="center" style="margin: 0px auto;">	
+	<tr style = "fontStyle: bold">
+		<th colspan ="2">IDENTITÉ</th>
+	</tr>
+	<tr>
+		<td style = "fontStyle: italic">Prénom:
+		<form style ="float:right">
+		 <input type= "text" name="prenom">
+		 </form>
+		</td>
+		<td id="nom" style="border-left:0px">Nom:
+			<form style ="float:right">
+			<input type="text" name= "nom"  >
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Adresse:
+			<form style ="float:right">
+			<input type="text" name= "adresse">
+			</form>
+		</td>
+		<td>
+		</td>
+	</tr>
+	<tr>
+		<td>Courriel:
+			<form style ="float:right">
+			<input type="email" name="courriel">
+			</form>
+		</td>
+		<td>Téléphone:
+			<form style ="float:right">
+			<input type= "text" name="téléphone">
+			</form>
+		</td>
+	</tr>
+	<tr style = "fontStyle: bold">
+	 <th colspan="2" > INFORMATIONS COMPLÉMENTAIRES</th>
+	 </tr>
+	<tr>
+		<td colspan = "2">Lien avec Côte-des-Neiges:
+		<form style = "text-align:right">
+			<input type="checkbox" name="name1" value = "resident" > Résident /
+			<input type="checkbox" name="name2" value = "lieu" > Lieu de travail /
+			<input type="checkbox" name="name3" value = "etudiant" > Étudiant /
+			<input type="checkbox" name="name4" value = "autre" > Autre
+		</form>
+		</td>
+	</tr>
+		<tr>
+		<td colspan = "2">Activités d'intérêts:
+		<form style = "text-align:right">
+			<input type="checkbox" name="activite1" value = "réparation" > Ateliers de réparation /
+			<input type="checkbox" name="activite2" value = "vente" > Vente de pièces /
+			<input type="checkbox" name="activite3" value = "social" > Activités sociales (sorties, 5 à 7 ) /
+			<input type="checkbox" name="activite4" value = "info" > Informations sur le cyclisme
+			<input type="checkbox" name="activite5" value = "formation" > Formations mécaniques
+
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">Bulletin d'information: Êtes-vous intéressé(e) à recevoir des nouvelles (évènements, horaires, etc.) de la Coop?
+		<form>
+		<input type = "radio" name = "choix" value = "oui">Oui
+		<input type = "radio" name = "choix" value = "non">Non
+		</td>
+		</form>
+	</tr>
+</table>
+<br/>
+<form>
+Date de paiement : <input type = "datetime-local" name = "date de paiement">
+</form>
+<form>
+<input type="submit" value = "Submit" align="center" style="height:300px;width:25%;font-size:30px;float:right" >
+</form>
+<br/>
+<br/>
+
+</body>
+</html>
